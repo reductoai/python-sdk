@@ -35,7 +35,7 @@ class UploadResource(SyncAPIResource):
         This property can be used as a prefix for any HTTP method call to return the
         the raw response object instead of the parsed content.
 
-        For more information, see https://www.github.com/stainless-sdks/reducto-python#accessing-raw-response-data-eg-headers
+        For more information, see https://www.github.com/reductoai/python-sdk#accessing-raw-response-data-eg-headers
         """
         return UploadResourceWithRawResponse(self)
 
@@ -44,7 +44,7 @@ class UploadResource(SyncAPIResource):
         """
         An alternative to `.with_raw_response` that doesn't eagerly read the response body.
 
-        For more information, see https://www.github.com/stainless-sdks/reducto-python#with_streaming_response
+        For more information, see https://www.github.com/reductoai/python-sdk#with_streaming_response
         """
         return UploadResourceWithStreamingResponse(self)
 
@@ -100,7 +100,7 @@ class AsyncUploadResource(AsyncAPIResource):
         This property can be used as a prefix for any HTTP method call to return the
         the raw response object instead of the parsed content.
 
-        For more information, see https://www.github.com/stainless-sdks/reducto-python#accessing-raw-response-data-eg-headers
+        For more information, see https://www.github.com/reductoai/python-sdk#accessing-raw-response-data-eg-headers
         """
         return AsyncUploadResourceWithRawResponse(self)
 
@@ -109,7 +109,7 @@ class AsyncUploadResource(AsyncAPIResource):
         """
         An alternative to `.with_raw_response` that doesn't eagerly read the response body.
 
-        For more information, see https://www.github.com/stainless-sdks/reducto-python#with_streaming_response
+        For more information, see https://www.github.com/reductoai/python-sdk#with_streaming_response
         """
         return AsyncUploadResourceWithStreamingResponse(self)
 
