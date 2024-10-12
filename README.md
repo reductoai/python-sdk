@@ -10,7 +10,7 @@ It is generated with [Stainless](https://www.stainlessapi.com/).
 
 ## Documentation
 
-The REST API documentation can be found on [docs.reducto.com](https://docs.reducto.com). The full API of this library can be found in [api.md](api.md).
+The REST API documentation can be found on [docs.reducto.ai](https://docs.reducto.ai). The full API of this library can be found in [api.md](api.md).
 
 ## Installation
 
@@ -29,7 +29,10 @@ The full API of this library can be found in [api.md](api.md).
 ```python
 from reducto import Reducto
 
-client = Reducto()
+client = Reducto(
+    # or 'us' | 'au'; defaults to "us".
+    environment="eu",
+)
 
 version = client.version.retrieve()
 ```
@@ -47,7 +50,10 @@ Simply import `AsyncReducto` instead of `Reducto` and use `await` with each API 
 import asyncio
 from reducto import AsyncReducto
 
-client = AsyncReducto()
+client = AsyncReducto(
+    # or 'us' | 'au'; defaults to "us".
+    environment="eu",
+)
 
 
 async def main() -> None:
