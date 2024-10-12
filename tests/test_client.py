@@ -554,6 +554,16 @@ class TestReducto:
             client = Reducto(bearer_token=bearer_token, _strict_response_validation=True)
             assert client.base_url == "http://localhost:5000/from/env/"
 
+        # explicit environment arg requires explicitness
+        with update_env(REDUCTO_BASE_URL="http://localhost:5000/from/env"):
+            with pytest.raises(ValueError, match=r"you must pass base_url=None"):
+                Reducto(bearer_token=bearer_token, _strict_response_validation=True, environment="us")
+
+            client = Reducto(
+                base_url=None, bearer_token=bearer_token, _strict_response_validation=True, environment="us"
+            )
+            assert str(client.base_url).startswith("https://platform.reducto.ai")
+
     @pytest.mark.parametrize(
         "client",
         [
@@ -1314,6 +1324,16 @@ class TestAsyncReducto:
         with update_env(REDUCTO_BASE_URL="http://localhost:5000/from/env"):
             client = AsyncReducto(bearer_token=bearer_token, _strict_response_validation=True)
             assert client.base_url == "http://localhost:5000/from/env/"
+
+        # explicit environment arg requires explicitness
+        with update_env(REDUCTO_BASE_URL="http://localhost:5000/from/env"):
+            with pytest.raises(ValueError, match=r"you must pass base_url=None"):
+                AsyncReducto(bearer_token=bearer_token, _strict_response_validation=True, environment="us")
+
+            client = AsyncReducto(
+                base_url=None, bearer_token=bearer_token, _strict_response_validation=True, environment="us"
+            )
+            assert str(client.base_url).startswith("https://platform.reducto.ai")
 
     @pytest.mark.parametrize(
         "client",

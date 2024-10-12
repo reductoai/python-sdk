@@ -20,7 +20,7 @@ or products provided by Reducto please follow the respective company's security 
 
 ### Reducto Terms and Policies
 
-Please contact dev-feedback@reducto.com for any questions or concerns regarding security of our services.
+Please contact support@reducto.ai for any questions or concerns regarding security of our services.
 
 ---
 
