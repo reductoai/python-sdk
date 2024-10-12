@@ -1,6 +1,6 @@
 # Reducto Python API library
 
-[![PyPI version](https://img.shields.io/pypi/v/reducto.svg)](https://pypi.org/project/reducto/)
+[![PyPI version](https://img.shields.io/pypi/v/reductoai.svg)](https://pypi.org/project/reductoai/)
 
 The Reducto Python library provides convenient access to the Reducto REST API from any Python 3.7+
 application. The library includes type definitions for all request params and response fields,
@@ -15,12 +15,9 @@ The REST API documentation can be found on [docs.reducto.ai](https://docs.reduct
 ## Installation
 
 ```sh
-# install from the production repo
-pip install git+ssh://git@github.com/reductoai/python-sdk.git
+# install from PyPI
+pip install --pre reductoai
 ```
-
-> [!NOTE]
-> Once this package is [published to PyPI](https://app.stainlessapi.com/docs/guides/publish), this will become: `pip install --pre reducto`
 
 ## Usage
 
