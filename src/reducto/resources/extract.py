@@ -51,6 +51,7 @@ class ExtractResource(SyncAPIResource):
         document_url: str,
         schema: object,
         advanced_options: extract_extract_params.AdvancedOptions | NotGiven = NOT_GIVEN,
+        array_extract: bool | NotGiven = NOT_GIVEN,
         experimental_options: extract_extract_params.ExperimentalOptions | NotGiven = NOT_GIVEN,
         generate_citations: bool | NotGiven = NOT_GIVEN,
         options: extract_extract_params.Options | NotGiven = NOT_GIVEN,
@@ -77,6 +78,8 @@ class ExtractResource(SyncAPIResource):
 
           schema: The JSON schema to use for extraction.
 
+          array_extract: Handle longer extract calls for arrays.
+
           generate_citations: If citations should be generated for the extracted content.
 
           system_prompt: A system prompt to use for the extraction. This is a general prompt that is
@@ -97,6 +100,7 @@ class ExtractResource(SyncAPIResource):
                     "document_url": document_url,
                     "schema": schema,
                     "advanced_options": advanced_options,
+                    "array_extract": array_extract,
                     "experimental_options": experimental_options,
                     "generate_citations": generate_citations,
                     "options": options,
@@ -116,6 +120,7 @@ class ExtractResource(SyncAPIResource):
         document_url: str,
         schema: object,
         advanced_options: extract_extract_async_params.AdvancedOptions | NotGiven = NOT_GIVEN,
+        array_extract: bool | NotGiven = NOT_GIVEN,
         experimental_options: extract_extract_async_params.ExperimentalOptions | NotGiven = NOT_GIVEN,
         generate_citations: bool | NotGiven = NOT_GIVEN,
         options: extract_extract_async_params.Options | NotGiven = NOT_GIVEN,
@@ -143,6 +148,8 @@ class ExtractResource(SyncAPIResource):
 
           schema: The JSON schema to use for extraction.
 
+          array_extract: Handle longer extract calls for arrays.
+
           generate_citations: If citations should be generated for the extracted content.
 
           priority: If True, attempts to process the job with priority if the user has priority
@@ -167,6 +174,7 @@ class ExtractResource(SyncAPIResource):
                     "document_url": document_url,
                     "schema": schema,
                     "advanced_options": advanced_options,
+                    "array_extract": array_extract,
                     "experimental_options": experimental_options,
                     "generate_citations": generate_citations,
                     "options": options,
@@ -209,6 +217,7 @@ class AsyncExtractResource(AsyncAPIResource):
         document_url: str,
         schema: object,
         advanced_options: extract_extract_params.AdvancedOptions | NotGiven = NOT_GIVEN,
+        array_extract: bool | NotGiven = NOT_GIVEN,
         experimental_options: extract_extract_params.ExperimentalOptions | NotGiven = NOT_GIVEN,
         generate_citations: bool | NotGiven = NOT_GIVEN,
         options: extract_extract_params.Options | NotGiven = NOT_GIVEN,
@@ -235,6 +244,8 @@ class AsyncExtractResource(AsyncAPIResource):
 
           schema: The JSON schema to use for extraction.
 
+          array_extract: Handle longer extract calls for arrays.
+
           generate_citations: If citations should be generated for the extracted content.
 
           system_prompt: A system prompt to use for the extraction. This is a general prompt that is
@@ -255,6 +266,7 @@ class AsyncExtractResource(AsyncAPIResource):
                     "document_url": document_url,
                     "schema": schema,
                     "advanced_options": advanced_options,
+                    "array_extract": array_extract,
                     "experimental_options": experimental_options,
                     "generate_citations": generate_citations,
                     "options": options,
@@ -274,6 +286,7 @@ class AsyncExtractResource(AsyncAPIResource):
         document_url: str,
         schema: object,
         advanced_options: extract_extract_async_params.AdvancedOptions | NotGiven = NOT_GIVEN,
+        array_extract: bool | NotGiven = NOT_GIVEN,
         experimental_options: extract_extract_async_params.ExperimentalOptions | NotGiven = NOT_GIVEN,
         generate_citations: bool | NotGiven = NOT_GIVEN,
         options: extract_extract_async_params.Options | NotGiven = NOT_GIVEN,
@@ -301,6 +314,8 @@ class AsyncExtractResource(AsyncAPIResource):
 
           schema: The JSON schema to use for extraction.
 
+          array_extract: Handle longer extract calls for arrays.
+
           generate_citations: If citations should be generated for the extracted content.
 
           priority: If True, attempts to process the job with priority if the user has priority
@@ -325,6 +340,7 @@ class AsyncExtractResource(AsyncAPIResource):
                     "document_url": document_url,
                     "schema": schema,
                     "advanced_options": advanced_options,
+                    "array_extract": array_extract,
                     "experimental_options": experimental_options,
                     "generate_citations": generate_citations,
                     "options": options,
