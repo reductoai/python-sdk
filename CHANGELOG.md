@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-alpha.2 (2024-10-20)
+
+Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/reductoai/python-sdk/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
+
+### Features
+
+* **api:** api update ([#5](https://github.com/reductoai/python-sdk/issues/5)) ([97fbdca](https://github.com/reductoai/python-sdk/commit/97fbdca792442bbd81d2e41ba3f2f08d5e7e7ee4))
+* **api:** api update ([#7](https://github.com/reductoai/python-sdk/issues/7)) ([c49540b](https://github.com/reductoai/python-sdk/commit/c49540b906d87633cdcb8f922f8c237c73558be4))
+
 ## 0.1.0-alpha.1 (2024-10-12)
 
 Full Changelog: [v0.0.1-alpha.0...v0.1.0-alpha.1](https://github.com/reductoai/python-sdk/compare/v0.0.1-alpha.0...v0.1.0-alpha.1)

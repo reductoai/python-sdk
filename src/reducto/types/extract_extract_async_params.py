@@ -35,6 +35,9 @@ class ExtractExtractAsyncParams(TypedDict, total=False):
 
     advanced_options: AdvancedOptions
 
+    array_extract: bool
+    """Handle longer extract calls for arrays."""
+
     experimental_options: ExperimentalOptions
 
     generate_citations: bool
