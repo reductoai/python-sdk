@@ -46,7 +46,10 @@ class TestExtract:
                 },
                 "table_output_format": "html",
             },
-            array_extract=True,
+            array_extract={
+                "enabled": True,
+                "pages_per_segment": 0,
+            },
             experimental_options={
                 "enable_checkboxes": True,
                 "enable_underlines": True,
@@ -134,7 +137,10 @@ class TestExtract:
                 },
                 "table_output_format": "html",
             },
-            array_extract=True,
+            array_extract={
+                "enabled": True,
+                "pages_per_segment": 0,
+            },
             experimental_options={
                 "enable_checkboxes": True,
                 "enable_underlines": True,
@@ -232,7 +238,10 @@ class TestAsyncExtract:
                 },
                 "table_output_format": "html",
             },
-            array_extract=True,
+            array_extract={
+                "enabled": True,
+                "pages_per_segment": 0,
+            },
             experimental_options={
                 "enable_checkboxes": True,
                 "enable_underlines": True,
@@ -320,7 +329,10 @@ class TestAsyncExtract:
                 },
                 "table_output_format": "html",
             },
-            array_extract=True,
+            array_extract={
+                "enabled": True,
+                "pages_per_segment": 0,
+            },
             experimental_options={
                 "enable_checkboxes": True,
                 "enable_underlines": True,
