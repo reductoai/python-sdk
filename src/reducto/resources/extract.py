@@ -51,7 +51,7 @@ class ExtractResource(SyncAPIResource):
         document_url: str,
         schema: object,
         advanced_options: extract_extract_params.AdvancedOptions | NotGiven = NOT_GIVEN,
-        array_extract: bool | NotGiven = NOT_GIVEN,
+        array_extract: extract_extract_params.ArrayExtract | NotGiven = NOT_GIVEN,
         experimental_options: extract_extract_params.ExperimentalOptions | NotGiven = NOT_GIVEN,
         generate_citations: bool | NotGiven = NOT_GIVEN,
         options: extract_extract_params.Options | NotGiven = NOT_GIVEN,
@@ -78,7 +78,7 @@ class ExtractResource(SyncAPIResource):
 
           schema: The JSON schema to use for extraction.
 
-          array_extract: Handle longer extract calls for arrays.
+          array_extract: The configuration options for array extract
 
           generate_citations: If citations should be generated for the extracted content.
 
@@ -120,7 +120,7 @@ class ExtractResource(SyncAPIResource):
         document_url: str,
         schema: object,
         advanced_options: extract_extract_async_params.AdvancedOptions | NotGiven = NOT_GIVEN,
-        array_extract: bool | NotGiven = NOT_GIVEN,
+        array_extract: extract_extract_async_params.ArrayExtract | NotGiven = NOT_GIVEN,
         experimental_options: extract_extract_async_params.ExperimentalOptions | NotGiven = NOT_GIVEN,
         generate_citations: bool | NotGiven = NOT_GIVEN,
         options: extract_extract_async_params.Options | NotGiven = NOT_GIVEN,
@@ -148,7 +148,7 @@ class ExtractResource(SyncAPIResource):
 
           schema: The JSON schema to use for extraction.
 
-          array_extract: Handle longer extract calls for arrays.
+          array_extract: The configuration options for array extract
 
           generate_citations: If citations should be generated for the extracted content.
 
@@ -217,7 +217,7 @@ class AsyncExtractResource(AsyncAPIResource):
         document_url: str,
         schema: object,
         advanced_options: extract_extract_params.AdvancedOptions | NotGiven = NOT_GIVEN,
-        array_extract: bool | NotGiven = NOT_GIVEN,
+        array_extract: extract_extract_params.ArrayExtract | NotGiven = NOT_GIVEN,
         experimental_options: extract_extract_params.ExperimentalOptions | NotGiven = NOT_GIVEN,
         generate_citations: bool | NotGiven = NOT_GIVEN,
         options: extract_extract_params.Options | NotGiven = NOT_GIVEN,
@@ -244,7 +244,7 @@ class AsyncExtractResource(AsyncAPIResource):
 
           schema: The JSON schema to use for extraction.
 
-          array_extract: Handle longer extract calls for arrays.
+          array_extract: The configuration options for array extract
 
           generate_citations: If citations should be generated for the extracted content.
 
@@ -286,7 +286,7 @@ class AsyncExtractResource(AsyncAPIResource):
         document_url: str,
         schema: object,
         advanced_options: extract_extract_async_params.AdvancedOptions | NotGiven = NOT_GIVEN,
-        array_extract: bool | NotGiven = NOT_GIVEN,
+        array_extract: extract_extract_async_params.ArrayExtract | NotGiven = NOT_GIVEN,
         experimental_options: extract_extract_async_params.ExperimentalOptions | NotGiven = NOT_GIVEN,
         generate_citations: bool | NotGiven = NOT_GIVEN,
         options: extract_extract_async_params.Options | NotGiven = NOT_GIVEN,
@@ -314,7 +314,7 @@ class AsyncExtractResource(AsyncAPIResource):
 
           schema: The JSON schema to use for extraction.
 
-          array_extract: Handle longer extract calls for arrays.
+          array_extract: The configuration options for array extract
 
           generate_citations: If citations should be generated for the extracted content.
 
