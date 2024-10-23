@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from typing import Optional
 from typing_extensions import TypedDict
 
 from .._types import FileTypes
@@ -10,6 +11,6 @@ __all__ = ["UploadUploadParams"]
 
 
 class UploadUploadParams(TypedDict, total=False):
-    extension: str
+    extension: Optional[str]
 
     file: FileTypes
