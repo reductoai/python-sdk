@@ -172,6 +172,7 @@ class TestExtract:
             priority=True,
             system_prompt="system_prompt",
             webhook={
+                "channels": ["string", "string", "string"],
                 "metadata": {},
                 "mode": "disabled",
                 "url": "url",
@@ -364,6 +365,7 @@ class TestAsyncExtract:
             priority=True,
             system_prompt="system_prompt",
             webhook={
+                "channels": ["string", "string", "string"],
                 "metadata": {},
                 "mode": "disabled",
                 "url": "url",
