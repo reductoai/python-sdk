@@ -215,6 +215,12 @@ class Options(TypedDict, total=False):
 
 
 class Webhook(TypedDict, total=False):
+    channels: List[str]
+    """
+    A list of Svix channels the message will be delivered down, omit to send to all
+    channels.
+    """
+
     metadata: object
     """JSON metadata included in webhook request body"""
 
