@@ -98,6 +98,8 @@ class ParseResponse(BaseModel):
     duration: float
     """The duration of the parse request in seconds."""
 
+    job_id: str
+
     result: Result
     """The resopnse from the document processing service.
 
