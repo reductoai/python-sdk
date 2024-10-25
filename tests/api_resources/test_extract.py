@@ -46,6 +46,10 @@ class TestExtract:
                 },
                 "table_output_format": "html",
             },
+            array_extract={
+                "enabled": True,
+                "pages_per_segment": 0,
+            },
             experimental_options={
                 "enable_checkboxes": True,
                 "enable_underlines": True,
@@ -133,6 +137,10 @@ class TestExtract:
                 },
                 "table_output_format": "html",
             },
+            array_extract={
+                "enabled": True,
+                "pages_per_segment": 0,
+            },
             experimental_options={
                 "enable_checkboxes": True,
                 "enable_underlines": True,
@@ -164,6 +172,7 @@ class TestExtract:
             priority=True,
             system_prompt="system_prompt",
             webhook={
+                "channels": ["string", "string", "string"],
                 "metadata": {},
                 "mode": "disabled",
                 "url": "url",
@@ -229,6 +238,10 @@ class TestAsyncExtract:
                     "start": 0,
                 },
                 "table_output_format": "html",
+            },
+            array_extract={
+                "enabled": True,
+                "pages_per_segment": 0,
             },
             experimental_options={
                 "enable_checkboxes": True,
@@ -317,6 +330,10 @@ class TestAsyncExtract:
                 },
                 "table_output_format": "html",
             },
+            array_extract={
+                "enabled": True,
+                "pages_per_segment": 0,
+            },
             experimental_options={
                 "enable_checkboxes": True,
                 "enable_underlines": True,
@@ -348,6 +365,7 @@ class TestAsyncExtract:
             priority=True,
             system_prompt="system_prompt",
             webhook={
+                "channels": ["string", "string", "string"],
                 "metadata": {},
                 "mode": "disabled",
                 "url": "url",

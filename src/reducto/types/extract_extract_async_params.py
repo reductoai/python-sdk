@@ -10,6 +10,7 @@ __all__ = [
     "AdvancedOptions",
     "AdvancedOptionsLargeTableChunking",
     "AdvancedOptionsPageRange",
+    "ArrayExtract",
     "ExperimentalOptions",
     "ExperimentalOptionsEnrich",
     "Options",
@@ -34,6 +35,9 @@ class ExtractExtractAsyncParams(TypedDict, total=False):
     """The JSON schema to use for extraction."""
 
     advanced_options: AdvancedOptions
+
+    array_extract: ArrayExtract
+    """The configuration options for array extract"""
 
     experimental_options: ExperimentalOptions
 
@@ -117,6 +121,17 @@ class AdvancedOptions(TypedDict, total=False):
 
     table_output_format: Literal["html", "json", "md", "jsonbbox"]
     """The mode to use for table output."""
+
+
+class ArrayExtract(TypedDict, total=False):
+    enabled: bool
+    """
+    Array extraction allows you to extract long lists of information from lengthy
+    documents. It makes parallel calls on overlapping sections of the document.
+    """
+
+    pages_per_segment: int
+    """Length of each segment, in pages, for parallel calls with array extraction."""
 
 
 class ExperimentalOptionsEnrich(TypedDict, total=False):
@@ -228,6 +243,12 @@ class Options(TypedDict, total=False):
 
 
 class Webhook(TypedDict, total=False):
+    channels: List[str]
+    """
+    A list of Svix channels the message will be delivered down, omit to send to all
+    channels.
+    """
+
     metadata: object
     """JSON metadata included in webhook request body"""
 

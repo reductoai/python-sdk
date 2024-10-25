@@ -154,6 +154,7 @@ class TestParse:
             },
             priority=True,
             webhook={
+                "channels": ["string", "string", "string"],
                 "metadata": {},
                 "mode": "disabled",
                 "url": "url",
@@ -326,6 +327,7 @@ class TestAsyncParse:
             },
             priority=True,
             webhook={
+                "channels": ["string", "string", "string"],
                 "metadata": {},
                 "mode": "disabled",
                 "url": "url",
